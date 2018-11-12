@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="answers-container">
+    <h1 class="text-center">Stupid Coaching</h1>
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <div class="message">
+          <p class="text-capitalize"><%= params[:question] %></p>
+          <p><span class="font-italic">-You</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <div class="message answer">
+          <p class="font-weight-bold"><%= @answer %></p>
+          <p><span class="font-italic">-Your coach</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <%= link_to "Ask a new question", ask_path %>
+      </div>
+    </div>
+  </div>
+</div>
